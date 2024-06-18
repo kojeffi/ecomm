@@ -133,8 +133,7 @@ DATABASES = {
 
 database_url = os.environ.get('DATABASE_URL')
 if database_url:
-    DATABASES["default"] = dj_database_url.parse('postgres://mount_1p28_user:qxhITRGoYaOuKiOfZwYDkQ9CAEyk5dyA@dpg-cporbe2j1k6c73ado6l0-a.oregon-postgres.render.com/mount_1p28')
-
+    DATABASES["default"] = dj_database_url.parse(database_url)
 
 
 # Password validation
@@ -208,13 +207,13 @@ LOGOUT_REDIRECT_URL = 'logout-url'
 # Stripe settings
 # STRIPE_PUBLIC_KEY = 'your_stripe_public_key'
 # STRIPE_SECRET_KEY = 'your_stripe_secret_key'
-STRIPE_SECRET_KEY = 'sk_test_51PLPxiFYYX5YHgfBLfVEwf4vsM0AOCXRd0oyAncoYe2UeFX7q7tKdBhEi5NmAKXhqvIzMuCGqbVxzLX6AMMnvMNE00OpQFMXKZ'
-STRIPE_PUBLIC_KEY  = 'pk_test_51PLPxiFYYX5YHgfB8BnLGDZijrDmvm5shkv1aoiU8bvta8HEFgezuMexHoRmvlYnPN1Ly35o6Mrr3wUUkQemqHBq00rrFGMFwH'
+# STRIPE_SECRET_KEY = 'sk_test_51PLPxiFYYX5YHgfBLfVEwf4vsM0AOCXRd0oyAncoYe2UeFX7q7tKdBhEi5NmAKXhqvIzMuCGqbVxzLX6AMMnvMNE00OpQFMXKZ'
+# STRIPE_PUBLIC_KEY  = 'pk_test_51PLPxiFYYX5YHgfB8BnLGDZijrDmvm5shkv1aoiU8bvta8HEFgezuMexHoRmvlYnPN1Ly35o6Mrr3wUUkQemqHBq00rrFGMFwH'
 
-# # # PayPal settings
-PAYPAL_CLIENT_ID = 'ARZlIyQyoUCPoxKAzHIDsKTARpcHOvTWERandV-4YXc6A9fkIshnmBEicE5q6sjNFeBnKbesEMbl6QlK'
-PAYPAL_CLIENT_SECRET = 'EC6HkA1jkJoNOY7_3qVcNi8hXSRuq9mY3Q_a_eJqLDy-2dP34ImOhkijjG3wDjn79xk_PQR7XoKqgoTO'
-PAYPAL_MODE = 'live'  # Or 'live' for production
+# # # # PayPal settings
+# PAYPAL_CLIENT_ID = 'ARZlIyQyoUCPoxKAzHIDsKTARpcHOvTWERandV-4YXc6A9fkIshnmBEicE5q6sjNFeBnKbesEMbl6QlK'
+# PAYPAL_CLIENT_SECRET = 'EC6HkA1jkJoNOY7_3qVcNi8hXSRuq9mY3Q_a_eJqLDy-2dP34ImOhkijjG3wDjn79xk_PQR7XoKqgoTO'
+# PAYPAL_MODE = 'live'  # Or 'live' for production
 
 
 # Stripe settings
